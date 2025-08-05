@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextViews for tablet options -->
+
+    <TextView
+        android:id="@+id/tvTabletOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tablet Options:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tabletOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S - Small Tablet: R2500.00"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:id="@+id/tabletOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabletOption1"
+        android:text="M - Medium Tablet: R3500.00"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tabletOption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabletOption2"
+        android:text="L - Large Tablet: R4500.00"
+        android:textSize="18sp"
+        />
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabletOption3"
+        android:hint="Enter your name"
+        />
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editName"
+        android:hint="Enter a custom message"
+        />
+
+    <EditText
+        android:id="@+id/editChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editMessage"
+        android:hint="Enter your choice (S/M/L)"
+        android:inputType="text"
+        />
+
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editChoice"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="0dp"
+        android:text="Calculate"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="377dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="0dp"
+        android:text="Quit"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonQuit"
+        android:layout_marginTop="30dp"
+        android:text="Results will be displayed here"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>
